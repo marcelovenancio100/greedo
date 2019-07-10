@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title th:remove="all">Confirmar Registro de Usuário</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    </head>
+
+    <body>
+        <div>
+            <h3>Caso você tenha solicitado acesso ao sistema XPTOWER</h3><br/>
+
+            <p>
+                Clique no link abaixo para confirmar a sua solicitação<br/>
+                <span th:text="${confirmationUrl}"></span>
+            </p>
+            <p>
+                Nome:
+                <span th:text="${user.firstname}"></span>
+                <span th:text="${user.lastname}"></span>
+            </p>
+        </div>
+    </body>
+</html>
